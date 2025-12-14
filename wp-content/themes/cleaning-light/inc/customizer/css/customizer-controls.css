@@ -1,0 +1,1733 @@
+/*Home Sections Icons*/
+.customize-pane-parent .control-section .accordion-trigger:before,
+.control-subsection .accordion-trigger:before{
+    font-family: dashicons;
+    content: "\f545";
+    font-size: 16px;
+    margin-right:8px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+#sub-accordion-panel-cleaninglight_frontpage_settings .accordion-section-title{
+    display: flex;
+}
+
+#sub-accordion-panel-cleaninglight_frontpage_settings .accordion-section-title .cleaninglight--sortable-handle{
+    flex-basis: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0f3ff;
+    height: auto;
+    min-width: 40px;
+    font-size: 18px;
+    cursor: move;
+}
+
+#accordion-section-cleaninglight_top_header .cleaninglight--sortable-handle,
+#sub-accordion-panel-cleaninglight_frontpage_settings .control-subsection .accordion-trigger:before{
+    display: none;
+}
+
+#accordion-section-cleaninglight_front_page .accordion-trigger:before {
+    content: "\f147";
+}
+#accordion-panel-cleaninglight_frontpage_settings .accordion-trigger:before {
+    content: "\f102";
+}
+#accordion-panel-cleaninglight_theme_options .accordion-trigger:before {
+    content: "\f489";
+}
+#accordion-section-cleaninglight_footer_section .accordion-trigger:before,
+#accordion-panel-cleaninglight_header_settings .accordion-trigger:before {
+    content: "\f15b";
+}
+#accordion-section-cleaninglight_blog_template .accordion-trigger:before {
+    content: "\f167";
+}
+#accordion-panel-cleaninglight_general_settings_panel .accordion-trigger:before {
+    content: "\f226";
+}
+#accordion-section-static_front_page .accordion-trigger:before {
+    content: "\f319";
+}
+#accordion-section-cleaninglight_slider_section .accordion-trigger:before {
+    content: "\f181";
+}
+#accordion-section-cleaninglight_titlebar_section .accordion-trigger:before {
+    content: "\f209";
+}
+#accordion-section-typography_settings .accordion-trigger:before {
+    content: "\f464";
+}
+#accordion-panel-nav_menus .accordion-trigger:before {
+    content: "\f333";
+}
+#accordion-section-custom_css .accordion-trigger:before {
+    content: "\f499";
+}
+#accordion-panel-widgets .accordion-trigger:before {
+    content: "\f116";
+}
+#accordion-section-colors .accordion-trigger:before {
+    content: "\f309";
+}
+#sub-accordion-panel-cleaninglight_frontpage_settings .customize-info .customize-panel-description {
+    display: block !important;
+}
+
+/**
+ * Customizer Title
+*/
+.customize-control-title,
+.cssbox-field-title,
+.customize-control-repeater-title {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.customize-control-range .customize-control-title{
+    justify-content: space-between;
+}
+.customize-control-title:after,
+.cssbox-field-title:after,
+.customize-control-repeater-title:after {
+    content: '';
+    height: 8px;
+    background: var(--wp-admin-theme-color);
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.single-field.type-color .customize-control-title::after,
+.cleaninglight-type-colorpicker .customize-control-repeater-title::after,
+.customize-control-color .customize-control-title::after,
+.customize-control-alpha-color .customize-control-title::after,
+.customize-control-range-slider .customize-control-title::after,
+.single-field.type-checkbox .customize-control-title::after,
+.customize-control-range .customize-control-title::after{
+    display: none;
+}
+
+/*Color Picker*/
+.customize-control-color,
+.customize-control-alpha-color {
+    position: relative;
+}
+.customize-control .wp-picker-container .wp-color-result.button {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+}
+.cleaninglight-type-colorpicker .wp-picker-container .wp-color-result.button{
+    top: -15px;
+}
+.single-field.type-color .wp-picker-container .wp-color-result.button{
+    top: -55px !important;
+}
+.customize-control .wp-picker-container .wp-color-result.button[style*="background-image"]:after {
+    display: none;
+}
+.customize-control .wp-picker-container .wp-color-result.button .color-alpha {
+    z-index: 2;
+}
+.customize-control .wp-picker-container .wp-color-result.button .wp-color-result-text {
+  display: none;
+}
+.customize-control .wp-picker-container .wp-color-result.wp-picker-open+.wp-picker-input-wrap {
+    display: flex;
+    vertical-align: top;
+    background: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcde;
+}
+
+.cleaninglight_light-drag-spinner {
+    display: none;
+    float: right;
+}
+
+.cleaninglight-gallery-screenshot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.customize-control-cleaninglight-buttonset .buttonset {
+    display: inline-block;
+    margin: 2px;
+}
+.customize-control-cleaninglight-buttonset .buttonset .switch-input {
+    display: none;
+}
+
+.customize-control-cleaninglight-buttonset .buttonset .switch-input:checked+.switch-label {
+    background-color: var(--wp-admin-theme-color);
+    color: #ffffff;
+}
+.customize-control-cleaninglight-buttonset .buttonset .switch-label {
+    display: inline-flex;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/**
+ Respoinsive button set
+*/
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-fields .cleaninglight-responsive-buttonset-title-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-device-wrap .switch-input {
+    display: none;
+}
+
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-device-wrap .switch-input:checked+.switch-label {
+    background-color: #275cf6;
+    color: #fff;
+}
+
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-device-wrap .switch-input:checked+.switch-label:before {
+    color: #fff;
+}
+
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-device-wrap .switch-label {
+    cursor: pointer;
+    background-color: #f5f5f5;
+    color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 3px;
+}
+
+.customize-control-cleaninglight-responsive-buttonset .cleaninglight-responsive-buttonset-device-wrap .switch-label:not(:last-child) {
+    margin-right: 5px;
+}
+
+.cleaninglight-responsive-buttonset-device-wrap {
+    display: none;
+}
+
+.cleaninglight-responsive-buttonset-device-wrap.active {
+    display: block;
+}
+
+.cleaninglight-responsive-buttonset-title-wrap.customize-control-title {
+    padding: 0 10px;
+}
+
+/*FontAwesome Icon Styles*/
+.cleaninglight-customizer-icon-box .cleaninglight-icon-box {
+    display: none;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-type-icon {
+    overflow: hidden;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-selected-icon {
+    background: #F6F6F6;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    position: relative;
+    margin-right: 44px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-selected-icon span i {
+    line-height: 45px;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-selected-icon span {
+    position: absolute;
+    background: #F6F6F6;
+    right: -45px;
+    top: -1px;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #eeeeee;
+    font-size: 16px;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-search {
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #eeeeee;
+    border-top: 0;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-search select {
+    margin-bottom: 10px;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-list {
+    height: 215px;
+    overflow-y: scroll;
+    font-size: 18px;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    border-right: 0;
+    border-top: 0;
+    padding-bottom: 4%;
+    display: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-list:first-of-type {
+    display: block;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-list li {
+    float: left;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-list li:hover {
+    background: #333333;
+    border: 1px solid #333333;
+    color: #ffffff;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.cleaninglight-customizer-icon-box .cleaninglight-icon-list li.icon-active {
+    background: #0073aa;
+    border: 1px solid #0073aa;
+    color: #ffffff;
+}
+
+.customize-control-repeater .customize-control-title,
+.customize-control-cleaninglight-typography .customize-control-title,
+.cleaninglight-accordion-section-title {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.customize-control-repeater .customize-control-title::before,
+.customize-control-cleaninglight-typography .customize-control-title::before,
+.cleaninglight-accordion-section-title:before {
+    height: 10px;
+    background: var(--wp-admin-theme-color);
+    width: 10px;
+    margin-right: 10px;
+}
+.customize-control-repeater .customize-control-title::after,
+.customize-control-cleaninglight-typography .customize-control-title::after,
+.cleaninglight-accordion-section-title:after {
+    content: '';
+    height: 10px;
+    background: var(--wp-admin-theme-color);
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.customize-control-checkbox-multiple ul {
+    padding: 5px;
+    border: 2px solid var(--wp-admin-theme-color);
+    border-radius: 5px;
+}
+
+.cleaninglight-type-checkbox {
+    margin-top: 10px;
+}
+.cleaninglight-type-checkbox label {
+    line-height: 20px;
+    display: block;
+    margin-left: 24px;
+    padding-top: 6px;
+}
+.cleaninglight-type-checkbox input[type=checkbox] {
+    margin-right: 8px;
+    margin-left: -24px;
+}
+.selector-labels .label {
+    display: inline-block;
+    padding: 0 10px 10px 0;
+    position: relative;
+    max-width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+}
+.selector-labels.full-width .label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.selector-labels.half-width .label {
+    max-width: 50%;
+    padding: 0 20px 20px 0;
+}
+.selector-labels.one-third-width .label {
+    max-width: 33.33%;
+    padding: 0 10px 10px 0;
+}
+.selector-labels.one-forth-width .label {
+    max-width: 25%;
+    padding: 0 10px 10px 0;
+}
+.selector-labels .label img {
+    vertical-align: middle;
+}
+.selector-labels .label.selector-selected:after {
+    content: "";
+    height: 25px;
+    width: 25px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: url(selected.png) no-repeat right top;
+}
+.cleaninglight-type-radio .radio-labels label {
+    display: block;
+    padding: 5px 0;
+}
+
+
+.customize-control-sortable ul li {
+    padding: 8px 10px;
+    line-height: 20px;
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    cursor: pointer;
+}
+.customize-control-sortable ul li .dashicons.dashicons-menu {
+    float: right;
+}
+.customize-control-sortable ul li .dashicons.visibility {
+    color: #49aed8;
+    margin-right: 10px;
+}
+.customize-control-sortable ul li.invisible {
+    color: #aaaaaa;
+    border: 1px dashed #aaaaaa;
+}
+.customize-control-sortable ul li.invisible .dashicons.visibility {
+    color: #aaaaaa;
+}
+
+
+.customize-control-range-slider .control-wrap {
+    display: inline-block;
+    width: 100%;
+}
+.customize-control-range-slider .cleaninglight-slider {
+    display: inline-block;
+    position: relative;
+    width: 67%;
+    height: 4px;
+    margin-top: 12px;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+.customize-control-range-slider .cleaninglight-slider:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.customize-control-range-slider .cleaninglight-slider .ui-slider-range {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #13a1dc;
+}
+.customize-control-range-slider .cleaninglight-slider .ui-slider-handle {
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-4px);
+    transform: translateY(-50%) translateX(-4px);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.customize-control-range-slider .cleaninglight-slider-input {
+    float: right;
+    width: 33%;
+}
+.customize-control-range-slider input.slider-input {
+    float: right;
+    width: 80%;
+    height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.customize-control-range .slider-reset {
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    color: #999999;
+}
+.customize-control-range .control-wrap {
+    width: 100%;
+}
+.customize-control-range .cleaninglight-slider {
+    display: inline-block;
+    position: relative;
+    width: 67%;
+    height: 4px;
+    margin: 12px 0;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+}
+
+.customize-control-range .cleaninglight-slider:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.customize-control-range .ui-slider-range {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #13a1dc;
+}
+.customize-control-range .ui-slider-handle {
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-4px);
+    transform: translateY(-50%) translateX(-4px);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.customize-control-range .cleaninglight-slider-input {
+    float: right;
+    width: 33%;
+}
+.customize-control-range input.slider-input {
+    float: right;
+    width: 80%;
+    height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555555;
+}
+
+#customize-control-cleaninglight_enable_frontpage {
+    background: #e2e2e2;
+    padding: 12px;
+    border: 1px solid #DDD;
+    width: 90%;
+}
+
+#customize-control-cleaninglight_enable_frontpage .customize-control-title{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/*Toggle - On/Off switch buttons*/
+.checkbox-toggle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.customize-control-checkbox-toggle p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.onoff-switch {
+    position: relative;
+    width: 52px;
+}
+
+.onoff-switch-checkbox {
+    display: none !important;
+}
+
+.customize-control-checkbox-toggle .onoff-switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 22px;
+    padding: 0;
+    line-height: 19px !important;
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+    border-radius: 30px;
+    background-color: #c4c4c4;
+    -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, .11);
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, .11);
+}
+
+.onoff-switch-label:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    position: absolute;
+    top: 2px;
+    bottom: 0;
+    right: 32px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+}
+
+.onoff-switch-label:after {
+    content: "OFF";
+    display: block;
+    color: #FFF;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 6px;
+    font-size: 11px;
+    font-family: 'Arial';
+}
+
+.onoff-switch-checkbox:checked+.onoff-switch-label {
+    background-color: #3caf0e;
+}
+
+.onoff-switch-checkbox:checked+.onoff-switch-label,
+.onoff-switch-checkbox:checked+.onoff-switch-label:before {
+    border-color: #3caf0e;
+}
+
+.onoff-switch-checkbox:checked+.onoff-switch-label:before {
+    right: 2px;
+}
+
+.onoff-switch-checkbox:checked+.onoff-switch-label:after {
+    content: "ON";
+    display: block;
+    color: #FFF;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 27px;
+    font-size: 11px;
+    font-family: 'Arial';
+}
+
+.customize-control-separator p{
+    margin: 5px 0;
+}
+
+.customize-control-separator span {
+    display: block;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+/*SWITCH CONTROL*/
+.customize-control-switch .customize-control-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 2;
+}
+.onoffswitch {
+    position: relative;
+    float: right;
+    width: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    -webkit-transition: margin .3s ease-in 0s;
+    transition: margin .3s ease-in 0s
+}
+.onoffswitch-inner>div {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    color: #ffffff;
+    font-weight: normal;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.onoffswitch-inner .onoffswitch-active {
+    background-color: #ffffff;
+    color: #ffffff
+}
+.onoffswitch-inner .onoffswitch-inactive {
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: right
+}
+.cleaninglight-repeater-fields .onoffswitch-inner .onoffswitch-active,
+.cleaninglight-repeater-fields .onoffswitch-inner .onoffswitch-inactive {
+    background-color: #eeeeee;
+}
+.onoffswitch-switch {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 3px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.onoffswitch-active .onoffswitch-switch {
+    background: #3caf0e;
+    left: 0
+}
+.onoffswitch-inactive .onoffswitch-switch {
+    background: #7D7D7D;
+    right: 0
+}
+.switch-on .onoffswitch-inner {
+    margin-left: 0
+}
+.customize-control-switch[id^="customize-control-cleaninglight_"][id$="_disable"] {
+    background: #e0e0e0;
+    padding: 8px 10px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cleaninglight-fields.cleaninglight-type-switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.cleaninglight-fields.cleaninglight-type-switch .customize-control-repeater-title {
+    margin: 0;
+}
+
+
+
+.customizer-tabs {
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6px 6px 0;
+    border-bottom: 3px solid var(--wp-admin-theme-color);
+    margin: 0 -12px;
+}
+.customizer-tabs a {
+    border-radius: 4px 4px 0 0;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    color: #000;
+}
+.customizer-tabs a.active {
+    background: var(--wp-admin-theme-color);
+    color: #ffffff;
+}
+
+
+#sub-accordion-panel-cleaninglight_home_panel .customize-info .customize-panel-description {
+    display: block !important;
+}
+.control-section-toggle-section .cleaninglight-toggle-section,
+.control-section-sidebar .cleaninglight-toggle-section {
+    text-decoration: none;
+    margin-left: auto;
+    vertical-align: middle;
+}
+.control-section-toggle-section .cleaninglight-toggle-section .dashicons,
+.control-section-sidebar .cleaninglight-toggle-section .dashicons {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.cleaninglight-section-visible .cleaninglight-toggle-section {
+    color: #929292;
+}
+
+#sub-accordion-panel-cleaninglight_frontpage_settings .cleaninglight-section-hidden,
+#sub-accordion-panel-cleaninglight_frontpage_settings .cleaninglight-section-hidden .dashicons{
+    color: #dcdcdc;
+}
+
+.cleaninglight-toggle-section {
+    float: right
+}
+
+.customizer-hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    left: -1000px;
+    display: none !important;
+}
+
+.customize-control .group-field-control-wrap .accordion-section-title:after {
+    content: "" !important;
+}
+.customize-control .group-field-control-wrap .expanded .accordion-section-title:after {
+    content: "" !important;
+}
+.group-field-control-wrap .group-field-control{
+    margin-bottom: 20px;
+}
+.customize-control .group-field-control-wrap .group-fields {
+    background: #ffffff;
+    padding: 5px 15px 15px 15px;
+}
+.customize-control .group-field-control-wrap .group-fields .single-field{
+    margin: 25px 0 30px;
+}
+.customize-control .group-field-control-wrap .group-fields .image-properties-checkbox {
+    margin-top: 15px;
+}
+.customize-control .group-field-control-wrap .group-fields .image-properties-checkbox .customize-control-title.checkbox {
+    display: inline;
+}
+.customize-control.customize-control-group {
+    margin-bottom: 0;
+}
+.customize-control.customize-control-group .group-field-title {
+    display: block;
+}
+.customize-control.customize-control-group .customize-control-description {
+    margin-top: 10px;
+}
+
+.customize-control.has-switchers .customize-control-title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.customize-control .control-wrap:not(.active) {
+    width: 100%;
+}
+.customize-control .single-field .responsive-switchers {
+    position: absolute;
+    right: -2px;
+    top: -6px;
+}
+.customize-control .responsive-switchers {
+    margin-left: 5px;
+    width: auto;
+    overflow: hidden;
+}
+.customize-control .single-field {
+    position: relative;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container {
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    background: #ffffff;
+    padding: 10px 11px;
+    position: relative;
+    max-width: 233px;
+    display: none;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-widget-header,
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-widget-content {
+    background: transparent;
+    border: none;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .alpha-color-picker-wrap .ui-state-focus {
+    background: transparent;
+    border: none;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-slider {
+    position: relative;
+    z-index: 1;
+    height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    width: 88%;
+    width: calc(100% - 28px);
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-widget-content .ui-state-default, .customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-slider-handle {
+    color: #777777;
+    background-color: #fff;
+    text-shadow: 0 1px 0 #ffffff;
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #aaaaaa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: -2px;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    cursor: ew-resize;
+    padding: 0;
+    line-height: 27px;
+    margin-left: -14px;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .ui-slider-handle.show-opacity {
+    font-size: 12px;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .click-zone {
+    width: 14px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .max-click-zone {
+    right: 10px;
+    left: auto;
+}
+.customize-control-alpha-color .wp-picker-container .alpha-color-picker-container .transparency {
+    height: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0;
+    margin-top: -24px;
+}
+.customize-control-alpha-color .wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
+    display: block;
+}
+.clearfix.group-footer {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap {
+    visibility: hidden;
+    opacity: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 0;
+}
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap li,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap li,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap li {
+    padding: 0;
+}
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap li input,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap li input,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap li input {
+    border-radius: 0;
+    border-right: 0;
+}
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap li:first-child input,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap li:first-child input,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap li:first-child input {
+    border-radius: 4px 0 0 4px;
+}
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap li:nth-child(4) input,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap li:nth-child(4) input,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap li:nth-child(4) input {
+    border-radius: 0px 4px 4px 0px;
+    border-right: 1px solid;
+}
+.responsive-switchers-cssboxfields .groupcssbox-device-wrap li label>span,
+.responsive-switchers-cssboxfields .tabscssbox-device-wrap li label>span,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .cssbox-device-wrap li label>span {
+    display: block;
+    margin-bottom: 5px;
+    opacity: .8;
+}
+.responsive-switchers-cssboxfields .active.groupcssbox-device-wrap,
+.responsive-switchers-cssboxfields .active.tabscssbox-device-wrap,
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields .active.cssbox-device-wrap {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    -webkit-transition: opacity 0.7s ease-in-out 0.2s, height 0.9s ease-in-out 0.3s;
+    -moz-transition: opacity 0.7s ease-in-out 0.2s, height 0.9s ease-in-out 0.3s;
+    -o-transition: opacity 0.7s ease-in-out 0.2s, height 0.9s ease-in-out 0.3s;
+    transition: opacity 0.7s ease-in-out 0.2s, height 0.9s ease-in-out 0.3s;
+}
+#customize-theme-controls .customize-pane-child.current-panel-parent,
+.in-sub-panel #customize-theme-controls .customize-pane-child.current-panel-parent {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.customize-control-cleaninglight-cssbox .responsive-switchers-fields {
+    clear: both;
+}
+.customize-control-cleaninglight-cssbox .cssbox-field-control-wrap .cssbox-field-control {
+    position: relative;
+}
+.customize-control-cleaninglight-cssbox .cssbox-field-control-wrap .cssbox-field-control .responsive-switchers {
+    position: absolute;
+    right: -2px;
+    top: -5px;
+}
+
+/* Custom Checkbox */
+.field-link {
+    display: block;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    position: relative;
+    width: 22px;
+    margin: 0 auto;
+}
+.field-link .cssbox_link,
+.field-link .groupcssbox_link,
+.field-link .tabscssbox_link {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+.field-link .cssbox_link,
+.field-link .cssbox_link:after,
+.field-link .cssbox_link:before,
+.field-link .cssbox_link *,
+.field-link .cssbox_link *:after,
+.field-link .cssbox_link *:before,
+.field-link .cssbox_link+.tgl-btn,
+.field-link .groupcssbox_link,
+.field-link .groupcssbox_link:after,
+.field-link .groupcssbox_link:before,
+.field-link .groupcssbox_link *,
+.field-link .groupcssbox_link *:after,
+.field-link .groupcssbox_link *:before,
+.field-link .groupcssbox_link+.tgl-btn,
+.field-link .tabscssbox_link,
+.field-link .tabscssbox_link:after,
+.field-link .tabscssbox_link:before,
+.field-link .tabscssbox_link *,
+.field-link .tabscssbox_link *:after,
+.field-link .tabscssbox_link *:before,
+.field-link .tabscssbox_link+.tgl-btn {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.field-link .cssbox_link::selection,
+.field-link .cssbox_link:after::selection,
+.field-link .cssbox_link:before::selection,
+.field-link .cssbox_link *::selection,
+.field-link .cssbox_link *:after::selection,
+.field-link .cssbox_link *:before::selection,
+.field-link .cssbox_link+.tgl-btn::selection,
+.field-link .groupcssbox_link::selection,
+.field-link .groupcssbox_link:after::selection,
+.field-link .groupcssbox_link:before::selection,
+.field-link .groupcssbox_link *::selection,
+.field-link .groupcssbox_link *:after::selection,
+.field-link .groupcssbox_link *:before::selection,
+.field-link .groupcssbox_link+.tgl-btn::selection,
+.field-link .tabscssbox_link::selection,
+.field-link .tabscssbox_link:after::selection,
+.field-link .tabscssbox_link:before::selection,
+.field-link .tabscssbox_link *::selection,
+.field-link .tabscssbox_link *:after::selection,
+.field-link .tabscssbox_link *:before::selection,
+.field-link .tabscssbox_link+.tgl-btn::selection {
+    background: none;
+}
+.field-link .cssbox_link+.tgl-btn,
+.field-link .groupcssbox_link+.tgl-btn,
+.field-link .tabscssbox_link+.tgl-btn {
+    outline: 0;
+    display: block;
+    width: auto;
+    height: 14px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 3px;
+}
+.field-link .cssbox_link+.tgl-btn:after,
+.field-link .cssbox_link+.tgl-btn:before,
+.field-link .groupcssbox_link+.tgl-btn:after,
+.field-link .groupcssbox_link+.tgl-btn:before,
+.field-link .tabscssbox_link+.tgl-btn:after,
+.field-link .tabscssbox_link+.tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.field-link .cssbox_link+.tgl-btn:after,
+.field-link .groupcssbox_link+.tgl-btn:after,
+.field-link .tabscssbox_link+.tgl-btn:after {
+    left: 0;
+}
+.field-link .cssbox_link+.tgl-btn:before,
+.field-link .groupcssbox_link+.tgl-btn:before,
+.field-link .tabscssbox_link+.tgl-btn:before {
+    display: none;
+}
+.field-link .cssbox_link:checked+.tgl-btn:after,
+.field-link .groupcssbox_link:checked+.tgl-btn:after,
+.field-link .tabscssbox_link:checked+.tgl-btn:after {
+    left: 50%;
+}
+.field-link .cssbox_link+.tgl-btn,
+.field-link .groupcssbox_link+.tgl-btn,
+.field-link .tabscssbox_link+.tgl-btn {
+    padding: 2px;
+    transition: all 0.2s ease;
+    background: #fff;
+    border: 1px solid #c4cfd7;
+    border-radius: 2em;
+}
+.field-link .cssbox_link+.tgl-btn:after,
+.field-link .groupcssbox_link+.tgl-btn:after,
+.field-link .tabscssbox_link+.tgl-btn:after {
+    transition: all 0.2s ease;
+    background: #c4cfd7;
+    content: "";
+    border-radius: 1em;
+}
+.field-link .cssbox_link:checked+.tgl-btn,
+.field-link .groupcssbox_link:checked+.tgl-btn,
+.field-link .tabscssbox_link:checked+.tgl-btn {
+    border: 1px solid #275cf6;
+}
+.field-link .cssbox_link:checked+.tgl-btn:after,
+.field-link .groupcssbox_link:checked+.tgl-btn:after,
+.field-link .tabscssbox_link:checked+.tgl-btn:after {
+    left: 50%;
+    background: #275cf6;
+}
+
+
+/*Dimension Control*/
+.customize-control-dimensions>ul {
+    display: inline-block;
+    width: 100%;
+}
+.customize-control-dimensions .dimension-wrap {
+    float: left;
+    width: 20%;
+    margin: 0;
+}
+.customize-control-dimensions .dimension-wrap input,
+.customize-control-dimensions .dimension-wrap button {
+    display: block;
+    font-size: 12px;
+    padding: 4px 0;
+    width: 100%;
+    height: 28px;
+    border: 1px solid;
+    border-color: #a4afb7;
+    border-left-width: 0;
+    border-radius: 0;
+    text-align: center;
+}
+.customize-control-dimensions .dimension-wrap:first-child input {
+    border-left-width: 1px;
+    border-radius: 3px 0 0 3px;
+}
+.customize-control-dimensions .dimension-wrap .dimension-label {
+    display: block;
+    color: #949698;
+    font-size: 10px;
+    padding-top: 5px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.customize-control-dimensions .dimension-wrap input:focus+.dimension-label {
+    color: #42474a;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions {
+    background-color: #fff;
+    border: 1px solid #a4afb7;
+    border-left-width: 0;
+    padding: 0;
+    outline: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions span {
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions .cleaninglight-pro-linked {
+    background-color: #a4afb7;
+    color: #fff;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions.unlinked .cleaninglight-unlinked {
+    display: none;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions.unlinked .cleaninglight-pro-linked {
+    display: block;
+}
+.customize-control-dimensions .dimension-wrap .link-dimensions .cleaninglight-pro-linked {
+    display: none;
+}
+
+.customize-control .responsive-switchers {
+    margin-left: 5px;
+    width: auto
+}
+.customize-control .responsive-switchers li:not(.desktop) {
+    display: none
+}
+.customize-control.responsive-switchers-open .responsive-switchers li {
+    display: block
+}
+.customize-control .responsive-switchers li {
+    float: left;
+    margin: 0
+}
+.customize-control .responsive-switchers li button {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #a4afb7;
+    position: relative;
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    cursor: pointer
+}
+.customize-control .responsive-switchers li button:hover {
+    background-color: #c2cbd2
+}
+.customize-control .responsive-switchers li:not(.desktop) button.active {
+    background-color: #13aff0
+}
+.customize-control .responsive-switchers li button i {
+    width: auto;
+    height: auto;
+    font-size: inherit;
+    line-height: 18px
+}
+.customize-control.has-switchers>.control-wrap:not(.active) {
+    display: none;
+    width: 100%
+}
+
+.cleaninglight-repeater-field-control {
+    background: #ffffff;
+    margin-bottom: 12px;
+    display: block;
+}
+.cleaninglight-repeater-footer {
+    margin-top: 15px;
+    text-align: right;
+    display: grid;
+}
+.cleaninglight-repeater-field-remove {
+    color: #ff0000;
+}
+.cleaninglight-repeater-field-control:first-child .cleaninglight-repeater-footer {
+    display: none;
+}
+.cleaninglight-repeater-field-title {
+    padding: 13px 15px;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-size: 1em;
+    border: 1px solid #e5e5e5;
+    cursor: move;
+    position: relative;
+    border-bottom: 0;
+}
+.cleaninglight-repeater-field-title:after {
+    content: "\f142";
+    font: 400 20px/1 dashicons;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1px 2px 1px 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cleaninglight-repeater-field-control.expanded .cleaninglight-repeater-field-title:after {
+    content: "\f140";
+}
+.cleaninglight-repeater-fields {
+    padding: 0 10px 10px;
+    border-top: none;
+    line-height: 16px;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+    display: none;
+}
+
+.cleaninglight-repeater-fields .cleaninglight-fields{
+    margin:25px 0 30px;
+}
+
+.cleaninglight-repeater-field-control.expanded .cleaninglight-repeater-fields {
+    display: block;
+}
+.cleaninglight-add-control-field {
+    float: right;
+}
+.moreitems {
+    clear: both;
+    padding-top: 15px;
+}
+.cleaninglight-add-control-field:before {
+    content: "\f132";
+    display: inline-block;
+    position: relative;
+    left: -2px;
+    top: -1px;
+    font: 400 18px/1 dashicons;
+    vertical-align: middle;
+}
+.cleaninglight-fields textarea {
+    width: 100%;
+    min-height: 100px;
+}
+.cleaninglight-fields select {
+    width: 100%;
+}
+.cleaninglight-fields .attachment-media-view {
+    background: none;
+}
+.cleaninglight-fields .attachment-media-view img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+.cleaninglight-fields.cleaninglight-type-colorpicker {
+    position: relative;
+}
+.cleaninglight-type-checkbox {
+    margin-top: 10px;
+}
+.cleaninglight-type-checkbox label {
+    line-height: 20px;
+    display: block;
+    margin-left: 24px;
+    padding-top: 6px;
+}
+.cleaninglight-type-checkbox input[type=checkbox] {
+    margin-right: 8px;
+    margin-left: -24px;
+}
+.cleaninglight-fields.cleaninglight-type-wrapper-start {
+    padding: 5px;
+    border: 1px solid #d7d7d7;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.wrapper-start {
+    padding: 2px 10px;
+    background-color: var(--e-a-bg-active);
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.wrapper-start span:after {
+    content: "\f142";
+    font-family: 'dashicons';
+    position: absolute;
+    right: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    height: auto;
+}
+.cleaninglight-fields.cleaninglight-type-wrapper-start.expanded .wrapper-start span:after {
+    content: "\f140";
+}
+.cleaninglight-type-wrapper-start .cleaninglight-fields {
+    display: none;
+}
+.cleaninglight-fields.cleaninglight-type-wrapper-start.expanded .cleaninglight-fields {
+    display: block;
+}
+
+/* Date Picker */
+.ui-datepicker {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.075);
+    min-width: 17em;
+    width: auto;
+    z-index: 1000000 !important;
+}
+
+body.wp-admin:not(.rtl) .ui-datepicker {
+    margin-left: -1px;
+}
+
+body.wp-admin.rtl .ui-datepicker {
+    margin-right: -1px;
+}
+
+.ui-datepicker * {
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    border-radius: 0;
+}
+
+.ui-datepicker table {
+    font-size: 13px;
+    margin: 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+.ui-datepicker .ui-widget-header,
+.ui-datepicker .ui-datepicker-header {
+    background-image: none;
+    border: none;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-state-hover {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: relative;
+    top: 0;
+    height: 34px;
+    width: 34px;
+}
+
+.ui-datepicker .ui-state-hover.ui-datepicker-prev,
+.ui-datepicker .ui-state-hover.ui-datepicker-next {
+    border: none;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 0;
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 0;
+}
+
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+    display: none;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    float: left;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    float: right;
+}
+
+.ui-datepicker .ui-datepicker-prev:before,
+.ui-datepicker .ui-datepicker-next:before {
+    font: normal 20px/34px 'dashicons';
+    padding-left: 7px;
+    color: #fff;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 34px;
+    height: 34px;
+}
+
+.ui-datepicker .ui-datepicker-prev:before {
+    content: '\f341';
+}
+
+.ui-datepicker .ui-datepicker-next:before {
+    content: '\f345';
+}
+
+.ui-datepicker .ui-datepicker-prev-hover:before,
+.ui-datepicker .ui-datepicker-next-hover:before {
+    opacity: 0.7;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 33%;
+}
+
+.ui-datepicker thead {
+    color: #fff;
+    font-weight: 600;
+}
+
+.ui-datepicker th {
+    padding: 10px;
+}
+
+.ui-datepicker td {
+    padding: 0;
+    border: 1px solid #f4f4f4;
+}
+
+.ui-datepicker td.ui-datepicker-other-month {
+    border: transparent;
+}
+
+.ui-datepicker tr:first-of-type td {
+    border-top: 1px solid #f0f0f0;
+}
+
+.ui-datepicker td.ui-datepicker-week-end {
+    background-color: #f4f4f4;
+    border: 1px solid #f0f0f0;
+}
+
+.ui-datepicker td.ui-datepicker-today {
+    background-color: #f0f0c0;
+}
+
+.ui-datepicker td.ui-datepicker-current-day {
+    background: #bbdd88;
+}
+
+.ui-datepicker td .ui-state-default {
+    background: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    display: block;
+    padding: 5px 10px;
+    font-weight: normal;
+    color: #444;
+}
+
+.ui-datepicker td.ui-state-disabled .ui-state-default {
+    opacity: 0.5;
+}
+
+/* Default Color Scheme */
+.ui-datepicker .ui-widget-header,
+.ui-datepicker .ui-datepicker-header {
+    background: #00a0d2;
+}
+
+.ui-datepicker thead {
+    background: #32373c;
+}
+
+.ui-datepicker td .ui-state-hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+/*Background Control*/
+.customize-control-background-image .background-image-fields {
+    margin-top: 12px;
+}
+
+.customize-control-background-image .background-image-fields li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.customize-control-background-image .background-image-fields li span {
+    width: 100%;
+}
+
+.customize-control-background-image .background-image-fields li select {
+    width: 50%;
+    height: 32px;
+    margin-top: 9px;
+    position: absolute;
+    right: 3px;
+}
+
+/** Upgrade Pro **/
+.ikthemes-upgrade-boxed {
+    background: #ffffff;
+    padding: 8px;
+    margin: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.ikthemes-upgrade-premium .button,
+.ikthemes-upgrade-boxed .button {
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    background-color: #ff262b;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid #135e9640;
+}
+.ikthemes-upgrade-premium .button{
+    margin-top: 0;
+    color: #ffffff;
+}
+.ikthemes-upgrade-boxed label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.customize-control-cleaninglight-upgrade-text {
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.customize-control-cleaninglight-upgrade-text ul {
+    margin: 10px 0;
+    font-style: italic;
+    margin-left: 20px;
+}
+.customize-control-cleaninglight-upgrade-text ul li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+    list-style: decimal;
+}
+
+#accordion-section-cleaninglight-frontpage-notice .accordion-section-title {
+    background: #FF0000 !important;
+    color: #ffffff !important;
+    text-align: center;
+    border: 0;
+    display: block;
+}
+#accordion-section-cleaninglight-frontpage-notice .accordion-section-title a{
+    color: #ffffff;
+}
+#accordion-section-cleaninglight-info .accordion-section-title::after,
+#accordion-section-cleaninglight-frontpage-notice .accordion-section-title::after {
+    display: none;
+}
